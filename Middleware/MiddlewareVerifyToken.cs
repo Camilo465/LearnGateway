@@ -17,7 +17,7 @@ public class MiddlewareVerifyToken
         if(tokenSeparator[1].Length < 16)
         {
             context.Response.StatusCode = StatusCodes.Status401Unauthorized;
-            context.Response.WriteAsync("Token not found");
+            await context.Response.WriteAsync("Token not found");
             return;
         }
         

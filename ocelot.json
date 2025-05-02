@@ -1,0 +1,102 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/Cep/GetByPostalCode/{postalCode}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7140
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Cep/GetByPostalCode/{postalCode}",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Fipe/GetAll",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7140
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Fipe/GetAll",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Fipe/GetByFipe/{fipe}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7140
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Fipe/GetByFipe/{fipe}",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Fipe/GetByVehicleType/{vehicleType}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7140
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Fipe/GetByVehicleType/{vehicleType}",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Ibge/GetAll",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7140
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Ibge/GetAll",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Ibge/GetByCode/{code}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7140
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Ibge/GetByCode/{code}",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/Ibge/GetByUf/{uf}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7140
+                }
+            ],
+            "UpstreamPathTemplate": "/api/Ibge/GetByUf/{uf}",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        }
+    ]
+}

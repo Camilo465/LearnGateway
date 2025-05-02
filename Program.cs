@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Middleware.MiddlewareGetHeader;
+using Middleware.MiddlewareVerifyToken;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 
